@@ -12,10 +12,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173", // local dev
-      "https://expense-tracker-eight-silk-86.vercel.app", // frontend on vercel
-    ],
+    origin: "*",
     METHODS: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
