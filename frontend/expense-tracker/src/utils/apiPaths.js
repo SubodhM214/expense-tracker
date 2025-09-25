@@ -1,6 +1,6 @@
-// export const BASE_URL = "https://expense-tracker-pi-lac.vercel.app/";
+export const BASE_URL = "https://expense-tracker-pi-lac.vercel.app/";
 
-export const BASE_URL = "http://localhost:8000/";
+// export const BASE_URL = "http://localhost:8000/";
 export const API_PATHS = {
   AUTH: {
     LOGIN: "/api/v1/auth/login",
