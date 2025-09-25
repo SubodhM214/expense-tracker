@@ -11,9 +11,10 @@ const dashboardRoutes = require("./routes/dashboardRoutes");
 const app = express();
 app.use(
   cors({
-    origin: "*",
+    origin: "*", // your frontend URL
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true, // allow cookies/authorization headers
   })
 );
 
